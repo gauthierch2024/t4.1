@@ -1,0 +1,44 @@
+"""
+programme fait par : Charles Gauthier
+groupe : 404
+Tp 4.1
+"""
+
+class rectangle :
+    def __init__(self,longueur, largeur):
+        self.longueur = longueur
+        self.largeur = largeur
+        self.aire = 0
+
+    def calcul_aire(self):
+        self.aire = self.longueur * self.largeur
+
+    def afficher_infos(self):
+        print(self.aire)
+
+
+
+
+
+rectangle_1 = rectangle(7, 9)
+rectangle_1.calcul_aire()
+rectangle_1.afficher_infos()
+
+
+from math import pi
+
+
+class cercle:
+    def __init__(self, rayon):
+        self.rayon = rayon
+        self.aire = 0
+        self.circonference = 0
+
+    def calcul_aire(self):
+        self.aire = pi * self.rayon * self.rayon
+
+    def calcul_circonference(self):
+        self.circonference = 2 * pi * self.rayon
+
+    def afficher_infos_(self):
+        print(f"{self.aire}aire")
